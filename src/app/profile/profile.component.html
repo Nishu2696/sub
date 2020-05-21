@@ -1,0 +1,62 @@
+<div class="card mb-5 mb-lg-0">
+  <div class="card-body">
+    <h5 class="card-title text-muted text-uppercase text-center">{{data.cost}}</h5>
+    <h6 class="card-price text-center">${{data.price}}<span class="period">{{data.time}}</span></h6>
+    <hr>
+    <ul class="fa-ul">
+      <li><span class="fa-li"><i class="fas fa-check"></i></span>{{data.user}}</li>
+      <li><span class="fa-li"><i class="fas fa-check"></i></span>{{data.storage}}</li>
+      <li><span class="fa-li"><i class="fas fa-check"></i></span>{{data.activities}}</li>
+      <li><span class="fa-li"><i class="fas fa-check"></i></span>{{data.access}}</li>
+      <li *ngIf="data.value == true" class="text-muted">
+        <span class="fa-li">
+          <i class="fas fa-times"></i>
+        </span>
+        {{data.projects}}
+      </li>
+      <li *ngIf="data.value == false">
+        <span class="fa-li">
+          <i class="fas fa-times"></i>
+        </span>
+        {{data.projects}}
+      </li>
+      <li *ngIf="data.value1 == true" class="text-muted">
+        <span class="fa-li">
+          <i class="fas fa-times"></i>
+        </span>
+        {{data.support}}
+      </li>
+      <li *ngIf="data.value1 == false">
+        <span class="fa-li">
+          <i class="fas fa-times"></i>
+        </span>
+        {{data.support}}
+      </li>
+      <li *ngIf="data.value2 == true" class="text-muted">
+        <span class="fa-li">
+          <i class="fas fa-times"></i>
+        </span>
+        {{data.domain}}
+      </li>
+      <li *ngIf="data.value2 == false">
+        <span class="fa-li">
+          <i class="fas fa-times"></i>
+        </span>
+        {{data.domain}}
+      </li>
+      <li *ngIf="data.value3 == true" class="text-muted">
+        <span class="fa-li">
+          <i class="fas fa-times"></i>
+        </span>
+        {{data.report}}
+      </li>
+      <li *ngIf="data.value3 == false">
+        <span class="fa-li">
+          <i class="fas fa-times"></i>
+        </span>
+        {{data.report}}
+      </li>
+    </ul>
+    <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+  </div>
+</div>
